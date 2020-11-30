@@ -1,0 +1,22 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 45L45 15L45 45L15 45Z" fill="#F76F34"/>
+<path d="M15 135L45 165L45 135L15 135Z" fill="#F76F34"/>
+<path d="M165 135L135 165L135 135L165 135Z" fill="#F76F34"/>
+<path d="M105 135L75 165L75 135L105 135Z" fill="#F76F34"/>
+<path d="M165 45L135 15L135 45L165 45Z" fill="#F76F34"/>
+<path d="M75 105L105 75L105 105L75 105Z" fill="#F76F34"/>
+<path d="M150 0L180 30L180 1.31134e-06L150 0Z" fill="#FDE2D6"/>
+<path d="M30 0L3.21869e-06 30L1.90735e-06 1.31134e-06L30 0Z" fill="#FDE2D6"/>
+<path d="M30 180L3.21869e-06 150L1.90735e-06 180L30 180Z" fill="#FDE2D6"/>
+<path d="M150 180L180 150L180 180L150 180Z" fill="#FDE2D6"/>
+<rect x="45" y="15" width="30" height="30" fill="#F76F34"/>
+<rect x="15" y="45" width="30" height="30" fill="#F76F34"/>
+<rect x="15" y="75" width="30" height="30" fill="#F76F34"/>
+<rect x="15" y="105" width="30" height="30" fill="#F76F34"/>
+<rect x="45" y="135" width="30" height="30" fill="#F76F34"/>
+<rect x="75" y="15" width="30" height="30" fill="#F76F34"/>
+<rect x="105" y="15" width="30" height="30" fill="#F76F34"/>
+<rect x="105" y="75" width="30" height="30" fill="#F76F34"/>
+<rect x="135" y="105" width="30" height="30" fill="#F76F34"/>
+<rect x="135" y="75" width="30" height="30" fill="#F76F34"/>
+</svg>
