@@ -1,2 +1,125 @@
-@import 'font';
-@import 'var';
+@import "font";
+@import "var";
+
+body {
+  background: $background;
+  font-family: $font, sans-serif;
+  color: $color;
+}
+
+.wrapper {
+  background: linear-gradient(0deg, rgba(44, 45, 48, 0.8), rgba(44, 45, 48, 0.8));
+  margin: 0 auto;
+}
+
+header,
+.info,
+.partner,
+.object {
+  margin: 0 20px 0 20px;
+  border-right: 2px solid $colorBorder-Buttons;
+}
+
+.button {
+  padding: 16px 24px;
+  background: transparent;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color;
+  outline: none;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+nav a {
+  color: $color;
+}
+nav a:hover {
+  color: $colorBorder-Buttons;
+}
+
+.info__title {
+  font-weight: $weightBold;
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.info__text {
+  margin-top: 48px;
+  font-size: 20px;
+  line-height: 32px;
+  color: $colorText;
+}
+
+.info__img {
+  margin-left: 38px;
+  padding: 206px;
+  border: 2px solid $colorBorder-Buttons;
+  box-sizing: border-box;
+}
+
+.partners__inner {
+  padding: 160px 0;
+  background: linear-gradient(0deg, rgba(83, 87, 94, 0.6), rgba(83, 87, 94, 0.6));
+}
+
+.partners__table {
+  position: relative;
+  z-index: 5;
+  background: rgba(40, 44, 53, 0.8);
+}
+
+.partners__table tr td {
+  padding: 24px 16px;
+  border: 2px solid $colorBorder-Buttons;
+  min-width: 350px;
+}
+
+.partners__inner--text {
+  padding: 160px 250px;
+  padding-right: 15px;
+  background: #30343c;
+}
+
+.partners__title {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: $weightBold;
+}
+
+.partners__text {
+  padding-top: 48px;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.button--object {
+  border: 2px solid $colorBorder-Buttons;
+  border-right: none;
+
+  &:hover {
+    border: 2px solid $colorBorder-Buttons;
+    border-right: none;
+    color: $colorBorder-Buttons;
+  }
+}
+
+.disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.active {
+  color: $colorBorder-Buttons;
+}
+
+.button svg {
+  width: 42px;
+  height: 42px;
+}

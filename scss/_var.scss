@@ -1,11 +1,20 @@
-$background: #282C35;
-$backgroundSecond: #30343C;
+// Color
+$background: #282c35;
+$backgroundSecond: #30343c;
 $backgroundHead: rgba(255, 255, 255, 0.1);
 $backgroundTable: rgba(40, 44, 53, 0.8);
-$backgroundBorder-Liner-Hover-Elements-Buttons: #F76F34;
-$backgroundInput: #272B3A;
+$colorBorder-Buttons: #f76f34;
+$backgroundInput: #272b3a;
 $borderInput: 1px solid rgba(255, 255, 255, 0.25);
-$colorFocus-Hover-Input: #477BFF;
+$colorFocus-Hover-Input: #477bff;
 $colorInput: rgba(255, 255, 255, 0.6);
-$color: #FFFFFF;
+$color: #ffffff;
+$colorText: rgba(255, 255, 255, 0.8);
 $backgroundCaptcha: #222222;
+
+// Fonts
+$font: "IBM Plex Sans";
+$fontRoboto: "Roboto";
+$weight: 400;
+$weightSemiBold: 600;
+$weightBold: 700;
