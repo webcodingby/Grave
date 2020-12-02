@@ -1,6 +1,15 @@
 @import "font";
 @import "var";
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
 body {
   background: $background;
   font-family: $font, sans-serif;
@@ -8,26 +17,23 @@ body {
 }
 
 .wrapper {
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
+  border-right: 2px solid $colorBorder-Buttons;
+  padding: 160px 0;
+
+  &__header {
+    padding-top: 0;
+  }
 }
 
-.navbar,
-.info,
-.partners__inner--text,
-.object {
-  border-right: 2px solid $colorBorder-Buttons;
-  padding-bottom: 160px;
-}
 
 header {
-  background: $background url("../img/bg/bg_header.jpg") no-repeat right;
-  background-size: contain;
+  background: $background url("../img/bg/bg_header.jpg") no-repeat 100%;
+  background-size: 30%;
 }
 
 .container {
   padding-right: 0;
+  overflow: hidden;
 }
 
 .button {
@@ -50,6 +56,7 @@ header {
 nav a {
   color: $color;
 }
+
 nav a:hover {
   color: $colorBorder-Buttons;
 }
@@ -69,7 +76,6 @@ nav a:hover {
 
 .info__inner {
   padding: 0;
-  border: 1px solid $colorBorder-Buttons;
 }
 
 .info__img {
@@ -81,12 +87,8 @@ nav a:hover {
 }
 
 .partners {
-  background: $backgroundSecond url("../img/bg/bg_section.jpg") no-repeat left;
+  background: $backgroundSecond url("../img/bg/bg_section.jpg") no-repeat 0;
   background-size: contain;
-}
-
-.partners__inner {
-
 }
 
 .partners__table {
@@ -102,9 +104,9 @@ nav a:hover {
 }
 
 .partners__inner--text {
-  padding: 160px 250px;
+  padding-left: 250px;
   padding-right: 15px;
-  background: #30343c;
+  background: $backgroundSecond;
 }
 
 .partners__title {
@@ -120,8 +122,7 @@ nav a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.object__iner--text {
-  padding-top: 160px;
+.object__inner--text {
   padding-bottom: 55px;
 }
 
@@ -182,4 +183,60 @@ nav a:hover {
   padding: 0;
   border: none;
   border-radius: 0;
+}
+
+.contact {
+  background: $backgroundSecond;
+}
+
+.contact__title {
+  font-weight: $weightBold;
+  font-size: 56px;
+  line-height: 64px;
+  color: $color;
+}
+
+.contact__inner--phone {
+  margin: 48px 0;
+}
+
+.phone__title {
+  font-weight: $weightBold;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.phone__text,
+.phone__link {
+  font-size: 18px;
+  line-height: 28px;
+  color: $color;
+}
+
+.phone__link:hover {
+  color: $colorBorder-Buttons;
+  text-decoration: none;
+}
+
+.address__title {
+  font-weight: $weightBold;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+address {
+  font-size: 18px;
+  line-height: 28px;
+  color: $color;
+}
+
+.contact__callback {
+  margin-top: 48px;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color;
+  border: 2px solid $colorBorder-Buttons;
 }
