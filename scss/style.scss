@@ -8,16 +8,26 @@ body {
 }
 
 .wrapper {
-  background: linear-gradient(0deg, rgba(44, 45, 48, 0.8), rgba(44, 45, 48, 0.8));
+  max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-header,
+.navbar,
 .info,
-.partner,
+.partners__inner--text,
 .object {
-  margin: 0 20px 0 20px;
   border-right: 2px solid $colorBorder-Buttons;
+  padding-bottom: 160px;
+}
+
+header {
+  background: $background url("../img/bg/bg_header.jpg") no-repeat right;
+  background-size: contain;
+}
+
+.container {
+  padding-right: 0;
 }
 
 .button {
@@ -57,16 +67,26 @@ nav a:hover {
   color: $colorText;
 }
 
+.info__inner {
+  padding: 0;
+  border: 1px solid $colorBorder-Buttons;
+}
+
 .info__img {
-  margin-left: 38px;
-  padding: 206px;
-  border: 2px solid $colorBorder-Buttons;
   box-sizing: border-box;
+  padding: 206px;
+  background: url("../img/bg/symbol_bg.jpg");
+  border: 1px solid $colorBorder-Buttons;
+  border-right: none;
+}
+
+.partners {
+  background: $backgroundSecond url("../img/bg/bg_section.jpg") no-repeat left;
+  background-size: contain;
 }
 
 .partners__inner {
-  padding: 160px 0;
-  background: linear-gradient(0deg, rgba(83, 87, 94, 0.6), rgba(83, 87, 94, 0.6));
+
 }
 
 .partners__table {
@@ -100,6 +120,18 @@ nav a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.object__iner--text {
+  padding-top: 160px;
+  padding-bottom: 55px;
+}
+
+.object__title {
+  font-weight: $weightBold;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
 .button--object {
   border: 2px solid $colorBorder-Buttons;
   border-right: none;
@@ -122,4 +154,32 @@ nav a:hover {
 .button svg {
   width: 42px;
   height: 42px;
+}
+
+.object__text {
+  margin-right: 100px;
+  font-size: 20px;
+  font-weight: $weight;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.object__slider {
+  overflow: hidden;
+  padding-bottom: 160px;
+}
+
+.slider__title {
+  padding: 40px;
+  margin-bottom: 0;
+  font-weight: $weightBold;
+  font-size: 24px;
+  line-height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.img-thumbnail {
+  padding: 0;
+  border: none;
+  border-radius: 0;
 }
