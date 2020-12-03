@@ -1,33 +1,35 @@
-.partners {
+.tasks {
   background: $backgroundSecond url("../img/bg/bg_section.jpg") no-repeat left;
   background-size: 50% 100%;
 }
 
-.partners__table {
+.tasks__inner {
+}
+
+.tasks__table {
   position: relative;
   z-index: 5;
   background: rgba(40, 44, 53, 0.8);
 }
 
-.partners__table tr td {
+.tasks__table tr td {
   padding: 24px 16px;
   border: 2px solid $colorBorder-Buttons;
   min-width: 300px;
 }
 
-.partners__inner--text {
+.tasks__inner--text {
   padding-right: 15px;
   background: $backgroundSecond;
 }
 
-.partners__title {
+.tasks__title {
   font-size: 56px;
   line-height: 64px;
   font-weight: $weightBold;
 }
 
-.partners__text {
-  padding-top: 48px;
+.tasks__text {
   font-size: 20px;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.8);

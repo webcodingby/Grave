@@ -1,0 +1,10 @@
+.info--link {
+  color: $colorBorder-Buttons;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    color: $color;
+    text-decoration: none;
+    border-bottom: 1px solid $colorBorder-Buttons;
+  }
+}

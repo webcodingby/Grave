@@ -1,0 +1,27 @@
+.galerry {
+  display: flex;
+}
+
+.gallery__block {
+  &:hover {
+    text-decoration: none;
+    & .galerry__title{
+      color: $colorBorder-Buttons;
+    }
+  }
+
+  .galerry__title {
+    padding: 40px;
+    margin-bottom: 0;
+    font-weight: $weightBold;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color;
+    background: $backgroundHead;
+  }
+  .gallery__img {
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+  }
+}

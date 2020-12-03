@@ -1,0 +1,96 @@
+.contact {
+  background: $backgroundSecond url("../img/bg/bg_section.jpg") no-repeat left;
+  background-size: 50% 100%;
+}
+
+.contact__form {
+  background: $background;
+  padding: 64px;
+  border: 2px solid $colorBorder-Buttons;
+}
+
+.form__text {
+  font-weight: $weightSemiBold;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color;
+}
+
+.input {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  background: transparent;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.input:focus {
+  color: $color;
+  background: #272b3a;
+  border: 1px solid #477bff;
+}
+
+.form--recaptcha {
+  background: #222222;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.101138);
+  border-radius: 3px;
+
+  .form__agree {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: $color;
+  }
+
+  input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.recaptcha__block {
+  padding: 10px;
+
+  .recaptcha__text {
+    font-size: 9.5px;
+    line-height: 11px;
+    display: flex;
+    align-items: flex-end;
+    color: #a5a5a5;
+
+    &--subtext {
+      font-size: 8px;
+    }
+  }
+}
+
+.form--submit {
+  padding: 8px 24px;
+  color: $color;
+  background: $colorBorder-Buttons;
+  border: none;
+  outline: none;
+}
+
+.contact__title {
+  font-weight: $weightBold;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.contact__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -18,14 +18,13 @@ body {
   padding: 160px 0;
 
   &__header {
-    padding-top: 32px;
+    padding-top: 0px;
   }
 }
 
-
 header {
   background: $background url("../img/bg/bg_header.jpg") no-repeat 100%;
-  background-size: 30%;
+  background-size: 30% 100%;
 }
 
 .container {
