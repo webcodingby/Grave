@@ -1,0 +1,62 @@
+.object__inner--text {
+  padding-bottom: 55px;
+}
+
+.object__title {
+  font-weight: $weightBold;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.button--object {
+  border: 2px solid $colorBorder-Buttons;
+  border-right: none;
+
+  &:hover {
+    border: 2px solid $colorBorder-Buttons;
+    border-right: none;
+    color: $colorBorder-Buttons;
+  }
+}
+
+.disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.active {
+  color: $colorBorder-Buttons;
+}
+
+.button svg {
+  width: 42px;
+  height: 42px;
+}
+
+.object__text {
+  margin-right: 100px;
+  font-size: 20px;
+  font-weight: $weight;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.object__slider {
+  overflow: hidden;
+  padding-bottom: 160px;
+}
+
+.slider__title {
+  padding: 40px;
+  margin-bottom: 0;
+  font-weight: $weightBold;
+  font-size: 24px;
+  line-height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.img-thumbnail {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}

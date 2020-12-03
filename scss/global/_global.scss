@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: $background;
+  font-family: $font, sans-serif;
+  color: $color;
+}
+
+.wrapper {
+  border-right: 2px solid $colorBorder-Buttons;
+  padding: 160px 0;
+
+  &__header {
+    padding-top: 32px;
+  }
+}
+
+
+header {
+  background: $background url("../img/bg/bg_header.jpg") no-repeat 100%;
+  background-size: 30%;
+}
+
+.container {
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.button {
+  padding: 16px 24px;
+  background: transparent;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color;
+  outline: none;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+nav a {
+  color: $color;
+}
+
+nav a:hover {
+  color: $colorBorder-Buttons;
+}

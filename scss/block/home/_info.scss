@@ -1,0 +1,25 @@
+
+.info__title {
+  font-weight: $weightBold;
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.info__text {
+  margin-top: 48px;
+  font-size: 20px;
+  line-height: 32px;
+  color: $colorText;
+}
+
+.info__inner {
+  padding: 0;
+}
+
+.info__img {
+  box-sizing: border-box;
+  padding: 206px;
+  background: url("../img/bg/symbol_bg.jpg");
+  border: 1px solid $colorBorder-Buttons;
+  border-right: none;
+}

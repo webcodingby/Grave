@@ -1,0 +1,36 @@
+
+.partners {
+  background: $backgroundSecond url("../img/bg/bg_section.jpg") no-repeat 0;
+  background-size: contain;
+}
+
+.partners__table {
+  position: relative;
+  z-index: 5;
+  background: rgba(40, 44, 53, 0.8);
+}
+
+.partners__table tr td {
+  padding: 24px 16px;
+  border: 2px solid $colorBorder-Buttons;
+  min-width: 350px;
+}
+
+.partners__inner--text {
+  padding-left: 250px;
+  padding-right: 15px;
+  background: $backgroundSecond;
+}
+
+.partners__title {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: $weightBold;
+}
+
+.partners__text {
+  padding-top: 48px;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}
