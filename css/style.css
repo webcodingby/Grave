@@ -4,7 +4,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
 }
 
@@ -16,7 +17,7 @@ body {
 
 .wrapper {
   border-right: 2px solid #f76f34;
-  padding: 160px 0;
+  padding: 10rem 0;
 }
 
 .wrapper__header {
@@ -34,10 +35,9 @@ header {
 }
 
 .button {
-  padding: 16px 24px;
   background: transparent;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
   color: #ffffff;
   outline: none;
   border: none;
@@ -48,25 +48,42 @@ header {
   border: none;
 }
 
-nav a {
+.navbar-dark .navbar-toggler {
+  border: 1px solid #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
 }
 
-nav a:hover {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-item .active {
   color: #f76f34;
 }
 
-.info__title {
+.title {
   font-weight: 700;
-  font-size: 72px;
-  line-height: 88px;
 }
 
-.info__text {
-  margin-top: 48px;
-  font-size: 20px;
-  line-height: 32px;
+.title--info {
+  font-size: 3rem;
+}
+
+.text {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.img--info {
+  border: 2px solid #f76f34;
+  border-right: none;
+}
+
+.info__title {
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 .info__inner {
@@ -74,11 +91,9 @@ nav a:hover {
 }
 
 .info__img {
-  box-sizing: border-box;
-  padding: 206px;
+  padding: 13rem;
   background: url("../img/bg/symbol_bg.jpg");
-  border: 1px solid #f76f34;
-  border-right: none;
+  border-bottom: 2px solid #f76f34;
 }
 
 .partners {
@@ -236,11 +251,12 @@ address {
 }
 
 .info__img--service {
-  border: 1px solid #f76f34;
+  border: 2px solid #f76f34;
+  border-right: none;
 }
 
 .info__title--service {
-  font-size: 56px;
+  font-size: 3rem;
 }
 
 .description--service {
@@ -248,6 +264,8 @@ address {
 }
 
 .galerry {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -358,11 +376,48 @@ address {
   background: transparent;
 }
 
+.input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
 .input::placeholder {
   font-size: 16px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
@@ -376,16 +431,22 @@ address {
 .form--recaptcha {
   background: #222222;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-sizing: border-box;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.101138);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.101138);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.101138);
   border-radius: 3px;
 }
 
 .form--recaptcha .form__agree {
   font-size: 14px;
   line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   color: #ffffff;
 }
 
@@ -401,8 +462,12 @@ address {
 .recaptcha__block .recaptcha__text {
   font-size: 9.5px;
   line-height: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   color: #a5a5a5;
 }
 

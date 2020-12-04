@@ -1,7 +1,8 @@
 .info__img--service {
-  border: 1px solid $colorBorder-Buttons;
+  border: 2px solid $colorBorder-Buttons;
+  border-right: none;
 }
 
 .info__title--service {
-  font-size: 56px;
+  font-size: 3rem;
 }

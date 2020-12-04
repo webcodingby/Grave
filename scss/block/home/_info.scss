@@ -1,15 +1,6 @@
-
 .info__title {
-  font-weight: $weightBold;
-  font-size: 72px;
-  line-height: 88px;
-}
-
-.info__text {
-  margin-top: 48px;
-  font-size: 20px;
-  line-height: 32px;
-  color: $colorText;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 .info__inner {
@@ -17,9 +8,7 @@
 }
 
 .info__img {
-  box-sizing: border-box;
-  padding: 206px;
+  padding: 13rem;
   background: url("../img/bg/symbol_bg.jpg");
-  border: 1px solid $colorBorder-Buttons;
-  border-right: none;
+  border-bottom: 2px solid $colorBorder-Buttons;
 }
