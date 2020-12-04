@@ -8,7 +8,7 @@
 }
 
 .info__img {
-  padding: 13rem;
-  background: url("../img/bg/symbol_bg.jpg");
-  border-bottom: 2px solid $colorBorder-Buttons;
+  padding: 5rem;
+  background: url("../img/bg/symbol_bg.jpg") no-repeat;
+  background-size: contain;
 }

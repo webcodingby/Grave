@@ -78,7 +78,6 @@ header {
 
 .img--info {
   border: 2px solid #f76f34;
-  border-right: none;
 }
 
 .info__title {
@@ -91,14 +90,14 @@ header {
 }
 
 .info__img {
-  padding: 13rem;
-  background: url("../img/bg/symbol_bg.jpg");
-  border-bottom: 2px solid #f76f34;
+  padding: 5rem;
+  background: url("../img/bg/symbol_bg.jpg") no-repeat;
+  background-size: contain;
 }
 
 .partners {
   background: #30343c url("../img/bg/bg_section.jpg") no-repeat left;
-  background-size: 50% 100%;
+  background-size: 40% 100%;
 }
 
 .partners__table {
@@ -493,4 +492,10 @@ address {
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1300px;
+  }
 }
