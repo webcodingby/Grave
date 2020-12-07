@@ -11,7 +11,21 @@ body {
   background: $background;
   font-size: 16px;
   font-family: $font, sans-serif;
+  font-weight: $weight;
   color: $color;
+}
+
+a {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-decoration: none;
+  color: $color;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $color;
+  transition: all ease 0.3s;
 }
 
 .wrapper {
@@ -45,6 +59,7 @@ header {
   &:focus {
     outline: none;
     border: none;
+    transition: all ease 0.3s;
   }
 }
 
@@ -53,7 +68,12 @@ header {
 }
 
 .navbar-dark .navbar-nav .nav-link {
+  font-size: 0.75rem;
+  margin: 1rem;
+  font-weight: $weightBold;
   color: $color;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -62,8 +82,14 @@ header {
   color: $colorBorder-Buttons;
 }
 
+.navbar-collapse {
+  transition: all ease 0.3s;
+}
+
 .title {
   font-weight: $weightBold;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 .title--info {

@@ -1,12 +1,12 @@
 .object__inner--text {
-  padding-bottom: 55px;
+  padding-bottom: 3.5rem;
 }
 
 .object__title {
   font-weight: $weightBold;
-  font-size: 56px;
-  line-height: 64px;
-  color: #ffffff;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: $color;
 }
 
 .button--object {
@@ -25,38 +25,46 @@
 }
 
 .active {
-  color: $colorBorder-Buttons;
+  z-index: 5;
 }
 
-.button svg {
-  width: 42px;
-  height: 42px;
+.button__slider--color {
+  color: $colorBorder-Buttons;
+  opacity: 1;
 }
 
 .object__text {
-  margin-right: 100px;
-  font-size: 20px;
+  margin-right: 5rem;
+  font-size: 1.5rem;
   font-weight: $weight;
-  line-height: 32px;
+  line-height: 2rem;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.slider__item {
+  z-index: 0;
 }
 
 .object__slider {
   overflow: hidden;
-  padding-bottom: 160px;
+  padding-bottom: 5rem;
 }
 
 .slider__title {
-  padding: 40px;
+  padding: 3rem;
   margin-bottom: 0;
   font-weight: $weightBold;
-  font-size: 24px;
-  line-height: 32px;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.img-thumbnail {
-  padding: 0;
-  border: none;
-  border-radius: 0;
+.slider__item:hover .slider__title {
+  background: $colorBorder-Buttons;
+  transition: all ease 0.3s;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+  z-index: 0;
+  width: auto;
 }

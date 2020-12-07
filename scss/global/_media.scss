@@ -1,24 +1,49 @@
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     max-width: 1300px;
   }
 }
 
-@media(min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
-@media(min-width: 540px) {}
+@media (min-width: 540px) {
+}
 
-@media(min-width: 320px) {
+@media (min-width: 320px) and (max-width: 539px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: $weight;
   }
 
-  .info__title {
-    font-size: 1.8rem;
-    line-height: 2rem;
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 0.75rem;
+    margin: 0;
+    font-weight: $weightBold;
+    color: $color;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   .navbar {
+    padding: 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .info__img {
+    padding: 3rem;
+  }
+
+  .slide {
     padding: 0;
   }
 }

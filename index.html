@@ -45,7 +45,7 @@
           </nav>
         </div>
         <div
-          class="info__section d-flex flex-lg-row flex-column justify-content-lg-center justify-content-end align-items-center pt-lg-0 pt-5">
+          class="row info__section d-flex flex-lg-row flex-column justify-content-lg-center justify-content-end align-items-center py-5">
           <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column">
             <h1 class="info__title title title--info">Строительная компания</h1>
             <p class="info__text text mt-5">Также как внедрение современных методик предполагает независимые способы
@@ -60,111 +60,121 @@
       </div>
     </header>
     <section class="partners">
-      <div class="wrapper container d-flex flex-lg-row justify-content-lg-between flex-column-reverse">
-        <div class="partners__inner col-lg-6 col-12 d-flex justify-content-end mt-5 px-0 px-lg-3">
-          <table class="partners__table">
-            <tr>
-              <td>МАПИД ОАО</td>
-              <td>Белстройнедвижимость ООО</td>
-            </tr>
-            <tr>
-              <td>Инфотехстрой ООО</td>
-              <td>ПМК 260 Костюковичская ГУКДСП</td>
-            </tr>
-            <tr>
-              <td>СУ 20 ЧСУП</td>
-              <td>АМтехреклама ООО</td>
-            </tr>
-            <tr>
-              <td>Бел-РДС-контракт ООО</td>
-              <td>Сигмаполюс СООО</td>
-            </tr>
-            <tr>
-              <td>Комбинат железобетонных изделий УКПП</td>
-              <td>ЖКХ Гродненского района КУП
-              </td>
-            </tr>
+      <div class="wrapper container">
+        <div class="row d-flex flex-lg-row justify-content-lg-between flex-column-reverse py-5">
+          <div class="partners__inner col-lg-6 col-12 d-flex justify-content-end mt-5 px-0 px-lg-3">
+            <table class="partners__table">
+              <tr>
+                <td>МАПИД ОАО</td>
+                <td>Белстройнедвижимость ООО</td>
+              </tr>
+              <tr>
+                <td>Инфотехстрой ООО</td>
+                <td>ПМК 260 Костюковичская ГУКДСП</td>
+              </tr>
+              <tr>
+                <td>СУ 20 ЧСУП</td>
+                <td>АМтехреклама ООО</td>
+              </tr>
+              <tr>
+                <td>Бел-РДС-контракт ООО</td>
+                <td>Сигмаполюс СООО</td>
+              </tr>
+              <tr>
+                <td>Комбинат железобетонных изделий УКПП</td>
+                <td>ЖКХ Гродненского района КУП
+                </td>
+              </tr>
 
-          </table>
-        </div>
-        <div
-          class="partners__inner--text col-lg-6 col-12 d-flex flex-column w-30 justify-content-center align-items-center pt-5">
-          <h2 class="partners__title align-self-lg-end align-self-center w-75">Партнёры</h2>
-          <p class="partners__text align-self-lg-end align-self-center w-75">
-            В целом, конечно, высокое качество позиционных исследований обеспечивает широкому кругу
-            (специалистов) участие в формировании первоочередных требований. Вот вам яркий пример
-            современных тенденций -.
-          </p>
+            </table>
+          </div>
+          <div
+            class="partners__inner--text col-lg-6 col-12 d-flex flex-column w-30 justify-content-center align-items-center pt-lg-0 pt-5">
+            <h2 class="partners__title title align-self-lg-end align-self-center w-75">Партнёры</h2>
+            <p class="partners__text text align-self-lg-end align-self-center w-75">
+              В целом, конечно, высокое качество позиционных исследований обеспечивает широкому кругу
+              (специалистов) участие в формировании первоочередных требований. Вот вам яркий пример
+              современных тенденций -.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section class="object">
       <div class="wrapper container">
-        <div class="object__iner--text d-flex justify-content-between align-items-center  pb-5">
-          <h2 class="object__title">Объекты</h2>
-          <div class="object__arrows">
-            <button class="button disabled pr-3">
-              <svg class="bi bi-arrow-left disable" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+        <div class="object__iner--text d-flex flex-lg-row justify-content-between align-items-center flex-column py-5">
+          <h2 class="object__title title">Объекты</h2>
+          <div class="object__arrows d-flex">
+            <a class="button__slider disabled pr-3 carousel-control-prev" href="#carouselExampleFade" role="button"
+              data-slide="prev">
+              <svg class="bi bi-arrow-left disable" width="3rem" height="3rem" viewBox="0 0 16 16" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                   d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z">
                 </path>
 
               </svg>
-            </button>
-            <button class="button active">
-              <svg class="bi bi-arrow-right active" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
+            </a>
+            <a class="button__slider active carousel-control-next" href="#carouselExampleFade" role="button"
+              data-slide="next">
+              <svg class="bi bi-arrow-right button__slider--color" width="3rem" height="3rem" viewBox="0 0 16 16"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
                 </path>
 
               </svg>
-            </button>
+            </a>
           </div>
           <a class="button--object button py-2 px-3" href="./objects.html">Смотреть все
           </a>
         </div>
-        <div class="object__inner d-flex flex-lg-row flex-column">
-          <p class="object__text col-lg-4 col-12">
-            Внезапно, активно развивающиеся страны третьего мира, которые представляют собой яркий пример
-            континентально-европейского типа политической культуры, будут смешаны с не уникальными данными до.
-          </p>
-          <div class="object__slider d-flex col-lg-9 col-12 py-lg-0 py-5">
-            <a href="object.html" class="slider__item d-flex flex-column mr-3">
-              <h3 class="slider__title">Название объекта</h3>
-              <img class="slider__img align-self-center img-thumbnail" src="./img/object/Rectangle 28.jpg" alt>
-            </a>
-            <a href="object.html" class="slider__item d-flex flex-column mr-3">
-              <h3 class="slider__title">Готовый объект</h3>
-              <img class="slider__img align-self-center img-thumbnail" src="./img/object/Rectangle 23.jpg" alt>
-            </a>
-            <a href="object.html" class="slider__item d-flex flex-column mr-3">
-              <h3 class="slider__title">Название объекта</h3>
-              <img class="slider__img align-self-center img-thumbnail" src="./img/object/Rectangle 28.jpg" alt>
-            </a>
-            <a href="object.html" class="slider__item d-flex flex-column mr-3">
-              <h3 class="slider__title">Готовый объект</h3>
-              <img class="slider__img align-self-center img-thumbnail" src="./img/object/Rectangle 23.jpg" alt>
-            </a>
+        <div class="object__inner">
+          <div class="row d-flex flex-lg-row flex-column py-5">
+            <p class="object__text text col-lg-6 col-12">
+              Внезапно, активно развивающиеся страны третьего мира, которые представляют собой яркий пример
+              континентально-европейского типа политической культуры, будут смешаны с не уникальными данными до.
+            </p>
+            <div class="object__slider carousel slide carousel-fade col-lg-5 d-block w-100 col-12 pb-5"
+              data-ride="carousel" id="carouselExampleFade">
+              <div class="carousel-inner d-flex">
+                <a href="object.html" class="slider__item carousel-item active d-flex flex-column">
+                  <h3 class="slider__title">Название объекта</h3>
+                  <img class="slider__img align-self-center" src="./img/object/Rectangle 28.jpg" alt="Объект">
+                </a>
+                <a href="object.html" class="slider__item carousel-item d-flex flex-column w-100">
+                  <h3 class="slider__title">Готовый объект</h3>
+                  <img class="slider__img align-self-center" src="./img/object/Rectangle 23.jpg" alt="Объект">
+                </a>
+                <a href="object.html" class="slider__item carousel-item d-flex flex-column w-100">
+                  <h3 class="slider__title">Готовый объект №2</h3>
+                  <img class="slider__img align-self-center" src="./img/object/Rectangl25.jpg" alt="Объект">
+                </a>
+                <a href="object.html" class="slider__item carousel-item d-flex flex-column w-100">
+                  <h3 class="slider__title">Готовый объект №3</h3>
+                  <img class="slider__img align-self-center img" src="./img/object/Rectangle22.jpg" alt="Объект">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="contact">
-      <div class="wrapper container d-flex flex-lg-row flex-column-reverse">
-        <div class="col-lg-8 col-12 d-flex justify-content-end align-items-end pt-lg-0 py-5 px-0">
+      <div class="wrapper container d-flex flex-lg-row flex-column-reverse py-5">
+        <div class="col-lg-7 col-12 d-flex justify-content-end align-items-end pr-lg-5 pt-lg-0 py-5 px-0">
           <img class="contact__map align-self-end" src="./img/map.jpg" alt="map">
         </div>
-        <div class="contact__inner col-lg-4 col-6">
-          <h3 class="contact__title">Контакты</h3>
+        <div class="contact__inner col-lg-5 col-lg-6 col-12">
+          <h3 class="contact__title title">Контакты</h3>
           <div class="contact__inner--phone d-flex flex-column">
             <h6 class="phone__title">Отдел продаж, прием заявок</h6>
-            <div class="phone__text d-flex"><span>РБ: </span><a class="phone__link" href="tel:+375445375727">+375 44
+            <div class="phone__text d-flex"><span>РБ:</span><a class="phone__link" href="tel:+375445375727"> +375 44
                 537-57-27</a></div>
-            <div class="phone__text d-flex"><span>Факс: </span><a class="phone__link" href="tel:+3750222735252">+375
-                0222 73-52-52, 73-50-70</a></div>
-            <a class="phone__link" href="mailto:sales@prombeton.by">sales@prombeton.by</a>
+            <div class="phone__text d-flex flex-wrap"><span>Факс: </span>
+              <a class="phone__link w-100" href="tel:+3750222735252">+375 0222 73-52-52</a>
+              <a class="phone__link w-100" href="tel:+3750222735070">+375 0222 73-50-70</a></div>
+            <a class="phone__link" href="mailto:sales@prombeton.by"> sales@prombeton.by</a>
           </div>
           <div class="contact__inner--adress">
             <h6 class="address__title">Адрес</h6>
