@@ -70,7 +70,6 @@ header {
 
 .navbar-dark .navbar-nav .nav-link {
   font-size: 0.75rem;
-  margin: 1rem;
   font-weight: $weightBold;
   color: $color;
   letter-spacing: 0.08em;
@@ -83,24 +82,54 @@ header {
   color: $colorBorder-Buttons;
 }
 
-.navbar-collapse {
-  transition: all ease 0.3s;
-}
-
 .title {
+  font-size: 3.5rem;
+  line-height: 114%;
   font-weight: $weightBold;
-  font-size: 4rem;
-  line-height: 4rem;
 }
 
-.title--info {
-  font-size: 3rem;
+.title__header {
+  font-size: 4.5rem;
+  line-height: 122%;
+  font-weight: $weightBold;
+}
+
+.title__header--page {
+  font-size: 4rem;
+  line-height: 122%;
+  font-weight: $weightBold;
+}
+
+.title__page {
+  font-weight: $weightBold;
+  font-size: 2.5rem;
+  line-height: 130%;
+}
+
+.title__subtitle {
+  font-size: 1.125rem;
+  line-height: 140%;
+  font-weight: $weightBold;
+  color: $colorText;
+}
+
+.text__header {
+  font-size: 1.25rem;
+  line-height: 160%;
+  color: $colorText;
 }
 
 .text {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 150%;
   color: $colorText;
+}
+
+.text__subtext {
+  font-weight: $weight;
+  font-size: 1.125rem;
+  line-height: 156%;
+  color: $color;
 }
 
 .img {

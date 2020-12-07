@@ -2,29 +2,8 @@
   background: $backgroundSecond;
 }
 
-.contact__title {
-  font-weight: $weightBold;
-  font-size: 3rem;
-  line-height: 4rem;
-  color: $color;
-}
-
 .contact__inner--phone {
   margin: 48px 0;
-}
-
-.phone__title {
-  font-weight: $weightBold;
-  font-size: 20px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.phone__text,
-.phone__link {
-  font-size: 18px;
-  line-height: 28px;
-  color: $color;
 }
 
 .phone__link:hover {
@@ -32,24 +11,11 @@
   text-decoration: none;
 }
 
-.address__title {
-  font-weight: $weightBold;
-  font-size: 20px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-address {
-  font-size: 18px;
-  line-height: 28px;
-  color: $color;
-}
-
 .contact__callback {
   margin-top: 48px;
-  padding: 16px 24px;
-  font-size: 18px;
-  line-height: 32px;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  line-height: 122%;
   color: $color;
   border: 2px solid $colorBorder-Buttons;
 }

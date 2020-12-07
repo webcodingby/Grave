@@ -72,7 +72,6 @@ header {
 
 .navbar-dark .navbar-nav .nav-link {
   font-size: 0.75rem;
-  margin: 1rem;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.08em;
@@ -85,25 +84,54 @@ header {
   color: #f76f34;
 }
 
-.navbar-collapse {
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-}
-
 .title {
+  font-size: 3.5rem;
+  line-height: 114%;
   font-weight: 700;
-  font-size: 4rem;
-  line-height: 4rem;
 }
 
-.title--info {
-  font-size: 3rem;
+.title__header {
+  font-size: 4.5rem;
+  line-height: 122%;
+  font-weight: 700;
+}
+
+.title__header--page {
+  font-size: 4rem;
+  line-height: 122%;
+  font-weight: 700;
+}
+
+.title__page {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 130%;
+}
+
+.title__subtitle {
+  font-size: 1.125rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.text__header {
+  font-size: 1.25rem;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .text {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 150%;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.text__subtext {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 156%;
+  color: #ffffff;
 }
 
 .img {
@@ -111,13 +139,15 @@ header {
   height: 100%;
 }
 
-.info__title {
-  font-size: 4rem;
-  line-height: 4rem;
-}
-
 .info__inner {
   padding: 0;
+}
+
+.info--link {
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .info__img {
@@ -150,28 +180,8 @@ header {
   background: #30343c;
 }
 
-.partners__title {
-  font-size: 56px;
-  line-height: 64px;
-  font-weight: 700;
-}
-
-.partners__text {
-  padding-top: 48px;
-  font-size: 20px;
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .object__inner--text {
   padding-bottom: 3.5rem;
-}
-
-.object__title {
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 4rem;
-  color: #ffffff;
 }
 
 .button--object {
@@ -196,14 +206,6 @@ header {
 .button__slider--color {
   color: #f76f34;
   opacity: 1;
-}
-
-.object__text {
-  margin-right: 5rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2rem;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .slider__item {
@@ -239,29 +241,8 @@ header {
   background: #30343c;
 }
 
-.contact__title {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 4rem;
-  color: #ffffff;
-}
-
 .contact__inner--phone {
   margin: 48px 0;
-}
-
-.phone__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.phone__text,
-.phone__link {
-  font-size: 18px;
-  line-height: 28px;
-  color: #ffffff;
 }
 
 .phone__link:hover {
@@ -269,24 +250,11 @@ header {
   text-decoration: none;
 }
 
-.address__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-address {
-  font-size: 18px;
-  line-height: 28px;
-  color: #ffffff;
-}
-
 .contact__callback {
   margin-top: 48px;
-  padding: 16px 24px;
-  font-size: 18px;
-  line-height: 32px;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  line-height: 122%;
   color: #ffffff;
   border: 2px solid #f76f34;
 }
@@ -307,18 +275,8 @@ address {
   border-right: none;
 }
 
-.info__title--service {
-  font-size: 3rem;
-}
-
 .description--service {
-  background: #30343C;
-}
-
-.galerry {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background: #30343c;
 }
 
 .gallery__block:hover {
@@ -347,13 +305,13 @@ address {
 
 .info--link {
   color: #f76f34;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .info--link:hover {
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 1px solid #f76f34;
+  border-bottom: 2px solid #f76f34;
 }
 
 .tasks {
@@ -378,29 +336,22 @@ address {
   background: #30343c;
 }
 
-.tasks__title {
-  font-size: 56px;
-  line-height: 64px;
-  font-weight: 700;
+.thumb img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
 }
 
-.tasks__text {
-  font-size: 20px;
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.8);
+.thumb img:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
-.description__title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #ffffff;
-}
-
-.description__text {
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.8);
+.thumb {
+  padding: 5px;
 }
 
 .contacts {

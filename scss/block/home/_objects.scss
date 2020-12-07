@@ -2,12 +2,6 @@
   padding-bottom: 3.5rem;
 }
 
-.object__title {
-  font-weight: $weightBold;
-  font-size: 3.5rem;
-  line-height: 4rem;
-  color: $color;
-}
 
 .button--object {
   border: 2px solid $colorBorder-Buttons;
@@ -33,13 +27,6 @@
   opacity: 1;
 }
 
-.object__text {
-  margin-right: 5rem;
-  font-size: 1.5rem;
-  font-weight: $weight;
-  line-height: 2rem;
-  color: rgba(255, 255, 255, 0.8);
-}
 
 .slider__item {
   z-index: 0;

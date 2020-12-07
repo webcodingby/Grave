@@ -1,10 +1,12 @@
-.info__title {
-  font-size: 4rem;
-  line-height: 4rem;
-}
-
 .info__inner {
   padding: 0;
+}
+
+.info--link {
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .info__img {
