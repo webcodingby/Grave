@@ -46,6 +46,7 @@ header {
 
 .container {
   padding-right: 0;
+  padding-left: 0;
   overflow: hidden;
 }
 
@@ -105,8 +106,9 @@ header {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.img--info {
-  border: 2px solid #f76f34;
+.img {
+  width: 100%;
+  height: 100%;
 }
 
 .info__title {
@@ -138,9 +140,9 @@ header {
 }
 
 .partners__table tr td {
-  padding: 24px 16px;
+  padding: 1.5rem 2rem;
   border: 2px solid #f76f34;
-  min-width: 300px;
+  min-width: 18.5rem;
 }
 
 .partners__inner--text {
@@ -239,8 +241,8 @@ header {
 
 .contact__title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 3rem;
+  line-height: 4rem;
   color: #ffffff;
 }
 
@@ -401,12 +403,12 @@ address {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.contact {
+.contacts {
   background: #30343c url("../img/bg/bg_section.jpg") no-repeat left;
   background-size: 50% 100%;
 }
 
-.contact__form {
+.contacts__form {
   background: #282c35;
   padding: 64px;
   border: 2px solid #f76f34;
@@ -533,13 +535,13 @@ address {
   outline: none;
 }
 
-.contact__title {
+.contacts__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
 }
 
-.contact__text {
+.contacts__text {
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.8);
@@ -578,7 +580,13 @@ address {
   .info__img {
     padding: 3rem;
   }
+  .button--object {
+    border: 2px solid #f76f34;
+  }
   .slide {
     padding: 0;
+  }
+  .description__text--img {
+    width: 100%;
   }
 }

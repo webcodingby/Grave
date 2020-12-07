@@ -43,6 +43,7 @@ header {
 
 .container {
   padding-right: 0;
+  padding-left: 0;
   overflow: hidden;
 }
 
@@ -102,6 +103,7 @@ header {
   color: $colorText;
 }
 
-.img--info {
-  border: 2px solid $colorBorder-Buttons;
+.img {
+  width: 100%;
+  height: 100%;
 }

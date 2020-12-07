@@ -1,9 +1,9 @@
-.contact {
+.contacts {
   background: $backgroundSecond url("../img/bg/bg_section.jpg") no-repeat left;
   background-size: 50% 100%;
 }
 
-.contact__form {
+.contacts__form {
   background: $background;
   padding: 64px;
   border: 2px solid $colorBorder-Buttons;
@@ -83,13 +83,13 @@
   outline: none;
 }
 
-.contact__title {
+.contacts__title {
   font-weight: $weightBold;
   font-size: 40px;
   line-height: 52px;
 }
 
-.contact__text {
+.contacts__text {
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.8);

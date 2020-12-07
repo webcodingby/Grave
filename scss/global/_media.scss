@@ -43,7 +43,15 @@
     padding: 3rem;
   }
 
+  .button--object {
+    border: 2px solid $colorBorder-Buttons;
+  }
+
   .slide {
     padding: 0;
+  }
+
+  .description__text--img {
+    width: 100%;
   }
 }
