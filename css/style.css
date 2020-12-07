@@ -289,7 +289,9 @@ address {
   border: 2px solid #f76f34;
 }
 
-.contact__callback:hover {
+.contact__callback:hover,
+.contact__callback:active,
+.contact__callback:focus {
   border: 2px solid transparent;
   color: #f76f34;
   -webkit-transform: scale(1.05);

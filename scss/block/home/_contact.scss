@@ -54,7 +54,9 @@ address {
   border: 2px solid $colorBorder-Buttons;
 }
 
-.contact__callback:hover {
+.contact__callback:hover,
+.contact__callback:active,
+.contact__callback:focus {
   border: 2px solid transparent;
   color: $colorBorder-Buttons;
   transform: scale(1.05);
