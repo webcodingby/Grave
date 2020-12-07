@@ -1,5 +1,24 @@
-@media(min-width: 1000px){
+@media(min-width: 1024px) {
   .container {
     max-width: 1300px;
+  }
+}
+
+@media(min-width: 768px) {}
+
+@media(min-width: 540px) {}
+
+@media(min-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+
+  .info__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .navbar {
+    padding: 0;
   }
 }
