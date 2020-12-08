@@ -4,19 +4,26 @@
 }
 
 .partners__table {
-  position: relative;
-  z-index: 5;
+  width: 100%;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.table__column {
+  border: 2px solid $colorBorder-Buttons;
   background: rgba(40, 44, 53, 0.8);
 }
 
-.partners__table tr td {
-  padding: 1.5rem 2rem;
-  border: 2px solid $colorBorder-Buttons;
-  min-width: 18.5rem;
+.partners__table--text {
+  display: block;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 150%;
+  color: $color;
 }
 
 .partners__inner--text {
   padding-right: 15px;
   background: $backgroundSecond;
 }
-

@@ -4,11 +4,9 @@
   }
 }
 
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 540px) {
-}
+@media (min-width: 540px) {}
 
 @media (min-width: 320px) and (max-width: 539px) {
   body {
@@ -32,6 +30,44 @@
   .title {
     font-size: 2rem;
     line-height: 2rem;
+  }
+
+  .title__header {
+    font-size: 2.5rem;
+    line-height: 122%;
+    font-weight: $weightBold;
+  }
+
+  .title__header--page {
+    font-size: 4rem;
+    line-height: 122%;
+    font-weight: $weightBold;
+  }
+
+  .title__page {
+    font-weight: $weightBold;
+    font-size: 2.5rem;
+    line-height: 130%;
+  }
+
+  .title__subtitle {
+    font-size: 1.125rem;
+    line-height: 140%;
+    font-weight: $weightBold;
+    color: $colorText;
+  }
+
+  .text__header {
+    font-size: 1.2rem;
+    line-height: 160%;
+    color: $colorText;
+  }
+
+  .text__subtext {
+    font-weight: $weight;
+    font-size: 1.125rem;
+    line-height: 156%;
+    color: $color;
   }
 
   .text {

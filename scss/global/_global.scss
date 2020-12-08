@@ -82,6 +82,14 @@ header {
   color: $colorBorder-Buttons;
 }
 
+.info--link {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: $weightBold;
+  color: $colorText;
+  text-transform: uppercase;
+}
+
 .title {
   font-size: 3.5rem;
   line-height: 114%;
