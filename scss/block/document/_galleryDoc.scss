@@ -1,17 +1,9 @@
-.thumb img {
-  -webkit-filter: grayscale(0);
-  filter: none;
-  border-radius: 5px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 5px;
+.documents__item--left {
+  transform: translateX(-28%);
+  transition: all ease 0.3s;
 }
 
-.thumb img:hover {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-
-.thumb {
-  padding: 5px;
+.documents__item--right {
+  transform: translateX(0);
+  transition: all ease 0.3s;
 }

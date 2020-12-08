@@ -144,7 +144,7 @@ header {
 }
 
 .documents__item {
-  width: 100%;
+  width: 150%;
   overflow: hidden;
 }
 
@@ -362,22 +362,18 @@ header {
   background: #30343c;
 }
 
-.thumb img {
-  -webkit-filter: grayscale(0);
-  filter: none;
-  border-radius: 5px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 5px;
+.documents__item--left {
+  -webkit-transform: translateX(-28%);
+          transform: translateX(-28%);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
-.thumb img:hover {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-
-.thumb {
-  padding: 5px;
+.documents__item--right {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .description__text {

@@ -10,6 +10,10 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <!-- fancyBox CSS -->
   <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+  <!-- Slick CSS -->
+  <link href="css/slick.css" rel="stylesheet">
+  <!-- Slick Theme CSS -->
+  <link href="css/slick-theme.css" rel="stylesheet">
   <!-- Свой CSS -->
   <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -90,29 +94,31 @@
         <div
           class="documents__iner--text d-flex flex-lg-row justify-content-between align-items-center flex-column pt-lg-0 pt-3 pb-lg-5 pb-3">
           <h2 class="documents__title title">Документы</h2>
-          <div class="documents__arrows">
-            <button class="button disabled mr-3">
-              <svg class="bi bi-arrow-left disable" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+          <div class="documents__arrows d-flex">
+            <a class="button__slider disabled pr-3 carousel-control-prev" data-slide="prev" href="#carouselExampleFade"
+              role="button">
+              <svg class="bi bi-arrow-left disable" width="3rem" height="3rem" viewBox="0 0 16 16" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                   d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z">
                 </path>
               </svg>
-            </button>
-            <button class="button active">
-              <svg class="bi bi-arrow-right active" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
+            </a>
+            <a class="button__slider active carousel-control-next" data-slide="next" href="#carouselExampleFade"
+              role="button">
+              <svg class="bi bi-arrow-right button__slider--color" width="3rem" height="3rem" viewBox="0 0 16 16"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
                 </path>
               </svg>
-            </button>
+            </a>
           </div>
           <div class="div"></div>
         </div>
-        <div class="documents__inner d-flex">
-          <div class="documents__slider ">
-            <div class="documents__item d-flex">
+        <div class="documents__inner d-inline-flex">
+          <div class="documents__slider">
+            <div class="documents__item d-inline-flex">
               <a data-fancybox="gallery" class="gallery--img pr-4 w-100" href="./img/documents/galery/Frame 47.jpg">
                 <img class="img-fluid" src="./img/documents/galery/Frame 47.jpg" alt="...">
               </a>
@@ -138,6 +144,8 @@
   <script src="./js/bootstrap.min.js"></script>
   <!-- fancyBox JS -->
   <script src="./js/jquery.fancybox.min.js"></script>
+  <!-- Slick JS -->
+  <script src="./js/slick.min.js"></script>
   <!-- Свой JS-файл -->
   <script src="./js/script.js"></script>
 </body>
