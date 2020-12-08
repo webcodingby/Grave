@@ -4,15 +4,14 @@
 }
 
 .contacts__form {
-  background: $background;
-  padding: 64px;
+  background: #282c35;
   border: 2px solid $colorBorder-Buttons;
 }
 
 .form__text {
   font-weight: $weightSemiBold;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 150%;
   color: $color;
 }
 
@@ -24,73 +23,116 @@
 }
 
 .input::placeholder {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 122%;
   display: flex;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
 
-.input:focus {
+.input:focus,
+.input:active {
   color: $color;
   background: #272b3a;
   border: 1px solid #477bff;
 }
 
 .form--recaptcha {
+  width: 60%;
   background: #222222;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-sizing: border-box;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.101138);
   border-radius: 3px;
+}
 
-  .form__agree {
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: flex-end;
-    color: $color;
-  }
+.form__agree {
+  position: relative;
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: flex-end;
+  color: $color;
+}
 
-  input[type="checkbox"] {
-    width: 12px;
-    height: 12px;
-  }
+.form__agree--checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.form__agree--checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background: $colorText;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.form__agree--checkbox:checked + label::before {
+  border-color: $colorBorder-Buttons;
+  background-color: $colorBorder-Buttons;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+.form__agree--checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: $colorBorder-Buttons;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.form__agree--checkbox:not(:disabled):active + label::before {
+  background-color: $colorBorder-Buttons;
+  border-color: $colorBorder-Buttons;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.form__agree--checkbox:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(71, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.form__agree--checkbox:focus:not(:checked) + label::before {
+  border-color: $colorBorder-Buttons;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.form__agree--checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .recaptcha__block {
-  padding: 10px;
+  padding: 1rem;
 
   .recaptcha__text {
-    font-size: 9.5px;
-    line-height: 11px;
+    font-size: 0.56rem;
+    line-height: 0.7rem;
     display: flex;
     align-items: flex-end;
     color: #a5a5a5;
 
     &--subtext {
-      font-size: 8px;
+      font-size: 0.5rem;
     }
   }
 }
 
 .form--submit {
-  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
+  width: 25%;
   color: $color;
   background: $colorBorder-Buttons;
   border: none;
   outline: none;
-}
-
-.contacts__title {
-  font-weight: $weightBold;
-  font-size: 40px;
-  line-height: 52px;
-}
-
-.contacts__text {
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.8);
 }

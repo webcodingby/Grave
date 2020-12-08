@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
   <title>Grave</title>
+  <!-- Bootstrap CSS -->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- fancyBox CSS -->
+  <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+  <!-- Свой CSS -->
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -50,8 +54,8 @@
                                   align-items-lg-start align-items-start align-items-center 
                                   flex-column">
 
-              <a class="info--link title align-self-start d-flex align-items-center my-5" href="./objects.html">
-                <svg class="bi bi-arrow-left mr-1" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              <a class="info--link text align-self-start d-flex align-items-center mb-5 pl-2" href="./objects.html">
+                <svg class="bi bi-arrow-left mr-2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z">
@@ -60,8 +64,9 @@
                 Объекты
               </a>
 
-              <h1 class="info__title title align-self-start my-5">Название объекта</h1>
-              <p class="info__text text__header">Также как внедрение современных методик предполагает независимые способы
+              <h1 class="info__title title align-self-start mt-lg-5 mt-2 pl-2">Название объекта</h1>
+              <p class="info__text text__header mt-4 pl-2">Также как внедрение современных методик предполагает
+                независимые способы
                 реализации системы обучения кадров, соответствующей насущным потребностям. Идейные соображения высшего.
               </p>
             </div>
@@ -73,28 +78,40 @@
       </div>
     </header>
     <section class="tasks">
-      <div class="wrapper container py-5">
+      <div class="wrapper container py-lg-5 py-0">
         <div class="row d-flex flex-lg-row flex-column-reverse">
-          <div class="col-lg-6 col-12 tasks__inner ml-lg-5">
-            <table class="tasks__table ml-lg-5">
-              <tr>
-                <td>Заказчик</td>
-                <td>Белстройнедвижимость ООО</td>
-              </tr>
-              <tr>
-                <td>Срок исполнения</td>
-                <td>ПМК 260 Костюковичская ГУКДСП</td>
-              </tr>
-              <tr>
-                <td>Ещё один параметр</td>
-                <td>Значение</td>
-              </tr>
-            </table>
+          <div class="col-lg-6 col-12 tasks__inner pl-lg-5 pl-2 pb-lg-0 pb-5">
+            <div class="container">
+              <div class="row partners__table">
+                <div class="table__column col-lg-6 col-12">
+                  <span class="partners__table--text">Заказчик</span>
+                </div>
+                <div class="table__column col-lg-6 col-12">
+                  <span class="partners__table--text">Белстройнедвижимость ООО</span>
+                </div>
+              </div>
+              <div class="row partners__table">
+                <div class="table__column col-lg-6 col-12">
+                  <span class="partners__table--text">Срок исполнения</span>
+                </div>
+                <div class="table__column col-lg-6 col-12">
+                  <span class="partners__table--text">ПМК 260 Костюковичская ГУКДСП</span>
+                </div>
+              </div>
+              <div class="row partners__table">
+                <div class="table__column col-lg-6 col-12">
+                  <span class="partners__table--text">Ещё один параметр</span>
+                </div>
+                <div class="table__column col-lg-6 col-12">
+                  <span class="partners__table--text">Значение</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            class="col-lg-5 col-12 partners__inner--text d-flex flex-column justify-content-center align-items-center ml-lg-5 px-3">
-            <h2 class="tasks__title title align-self-lg-start mb-0">Задача</h2>
-            <p class="tasks__text text__header align-self-lg-end mt-5">
+            class="col-lg-5 col-12 partners__inner--text d-flex flex-column justify-content-center align-items-center ml-lg-5 px-3 pt-lg-0 pt-5">
+            <h2 class="tasks__title title align-self-lg-start mb-lg-0 mb-3 pl-lg-0 pl-3">Задача</h2>
+            <p class="tasks__text text__header align-self-lg-end mt-5 pl-lg-0 pl-3">
               В целом, конечно, высокое качество позиционных исследований обеспечивает широкому кругу (специалистов)
               участие в
               формировании первоочередных требований. Вот вам яркий пример современных тенденций.
@@ -105,8 +122,8 @@
     </section>
     <section class="description">
       <div class="wrapper container py-5">
-        <h2 class="description__title title">Описание</h2>
-        <p class="description__text text text w-75">
+        <h2 class="description__title title pl-3">Описание</h2>
+        <p class="description__text text text pl-3 pt-5">
           В целом, конечно, высокое качество позиционных исследований обеспечивает широкому кругу (специалистов) участие
           в
           формировании первоочередных требований. Вот вам яркий пример современных тенденций.
@@ -114,25 +131,42 @@
         <div class="description__gallery mt-5">
           <div class="row d-flex justify-content-lg-between">
             <div class="col-lg-4 w-100">
-              <img class="description__gallery--img ml-0" src="./img/object/galery/Rectangle 29.jpg" alt="foto">
-              <img class="description__gallery--img ml-0 pt-2" src="./img/object/galery/Rectangle 30 (2).jpg"
-                alt="foto">
+              <a data-fancybox="gallery" class="gallery--img" href="./img/object/galery/Rectangle 29.jpg">
+                <img class="description__gallery--img ml-0" src="./img/object/galery/Rectangle 29.jpg" alt="photo">
+              </a>
+              <a data-fancybox="gallery" class="gallery--img" href="./img/object/galery/Rectangle 30 (2).jpg">
+                <img class="description__gallery--img ml-0 mt-2" src="./img/object/galery/Rectangle 30 (2).jpg"
+                  alt="photo">
+              </a>
             </div>
             <div class="col-lg-4 w-100">
-              <img class="description__gallery--img" src="./img/object/galery/Rectangle 29 (1).jpg" alt="foto">
-              <img class="description__gallery--img pt-2" src="./img/object/galery/Rectangle 30 (1).jpg" alt="foto">
+              <a data-fancybox="gallery" class="gallery--img" href="./img/object/galery/Rectangle 29 (1).jpg">
+                <img class="description__gallery--img" src="./img/object/galery/Rectangle 29 (1).jpg" alt="photo">
+              </a>
+              <a data-fancybox="gallery" class="gallery--img" href="./img/object/galery/Rectangle 30 (1).jpg">
+                <img class="description__gallery--img mt-2" src="./img/object/galery/Rectangle 30 (1).jpg" alt="photo">
+              </a>
             </div>
             <div class="col-lg-4">
-              <img class="description__gallery--img" src="./img/object/galery/Rectangle 29 (2).jpg" alt="foto">
-              <img class="description__gallery--img pt-2" src="./img/object/galery/Rectangle 30.jpg" alt="foto">
+              <a data-fancybox="gallery" class="gallery--img" href="./img/object/galery/Rectangle 29 (2).jpg">
+                <img class="description__gallery--img" src="./img/object/galery/Rectangle 29 (2).jpg" alt="photo">
+              </a>
+              <a data-fancybox="gallery" class="gallery--img" href="./img/object/galery/Rectangle 30.jpg">
+                <img class="description__gallery--img mt-2" src="./img/object/galery/Rectangle 30.jpg" alt="photo">
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Jquery -->
     <script src="./js/jquery-3.5.1.js"></script>
+    <!-- Bootstrap JS -->
     <script src="./js/bootstrap.min.js"></script>
+    <!-- fancyBox JS -->
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <!-- Свой JS-файл -->
     <script src="./js/script.js"></script>
   </div>
 </body>

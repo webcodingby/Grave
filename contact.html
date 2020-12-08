@@ -44,63 +44,71 @@
             </div>
           </nav>
         </div>
-        <div class="info section d-flex pt-5">
-          <div class="col-md-6 d-flex justify-content-start flex-column">
+        <div class="row info section d-flex flex-lg-row flex-column py-5">
+          <div class="col-lg-6 col-12 d-flex justify-content-start flex-column pl-4">
             <h1 class="info__title title__header">Контакты</h1>
             <div class="info__inner--phone d-flex flex-column">
-              <h6 class="phone__title">Отдел продаж, прием заявок</h6>
-              <div class="d-flex phone__text"><span>РБ: </span><a class="phone__link" href="tel:+375445375727">+375 44
-                  537-57-27</a></div>
-              <div class="d-flex phone__text"><span>Факс: </span><a class="phone__link" href="tel:+3750222735252">+375
-                  0222 73-52-52, 73-50-70</a></div>
-              <a class="phone__link" href="mailto:sales@prombeton.by">sales@prombeton.by</a>
+              <h6 class="phone__title title__subtitle py-3">Отдел продаж, прием заявок</h6>
+              <div class="d-flex phone__text text__subtext"><span>РБ: </span>
+                <a class="phone__link text__subtext" href="tel:+375445375727">+375 44 537-57-27</a>
+              </div>
+              <div class="d-flex phone__text text__subtext d-flex flex-wrap pt-2"><span>Факс: </span>
+                <a class="phone__link text__subtext w-100" href="tel:+3750222735252">+375 0222 73-52-52</a>
+                <a class="phone__link text__subtext w-100" href="tel:+3750222735070">+375 0222 73-50-70</a>
+              </div>
+              <a class="phone__link text__subtext" href="mailto:sales@prombeton.by">sales@prombeton.by</a>
             </div>
-            <div class="info__inner--adress">
-              <h6 class="address__title">Адрес</h6>
-              <address>
+            <div class="info__inner--adress py-5">
+              <h6 class="address__title title__subtitle">Адрес</h6>
+              <address class="text__subtext">
                 213134 Могилевская область, Могилевский район,
                 Буйничский с/с, 22/2 (за нефтебазой в районе аг. Буйничи)
               </address>
             </div>
           </div>
-          <div class="col-md-6 d-flex justify-content-end info__inner">
-            <img class="info__img--contact h-100 w-100" src="./img/map.jpg" alt="info">
+          <div class="info__inner col-lg-6 col-6 align-self-end mt-lg-0 mt-3 pb-lg-0 pb-5">
+            <img class="info__img--service h-100 w-100" src="./img/map.jpg" alt="info">
           </div>
         </div>
       </div>
     </header>
     <section class="contacts">
-      <div class="container d-flex wrapper">
-        <div class="col-md-7 contacts__inner">
-          <form action="#" id="formCallback" class="contacts__form form d-flex flex-column">
-            <p class="form__text text">
-              Отправьте свои данные и специалист нашей компании свяжется с вами в ближайшее время.
-            </p>
-            <input type="text" name="name" id="form--name" class="input mb-3" placeholder="Ваше имя">
-            <input type="email" name="email" id="form--email" class="input mb-3" placeholder="E-mail">
-            <input type="tel" name="phone" id="form--phone" class="input mb-3" placeholder="Телефон">
-            <div class="form--recaptcha d-flex justify-content-md-between align-items-center w-75">
-              <label for="form__agree--checkbox" class="form__agree">
-                <input type="checkbox" name="agree" id="form__agree--checkbox" class="mx-2">
-                Я не робот
-              </label>
-              <div class="recaptcha__block d-flex flex-column">
-                <img src="./img/icon/reCAPTCHA.svg" alt="recaptha" class="recaptcha__img">
-                <span class="recaptcha__text pl-1">reCAPTCHA</span>
-                <span class="recaptcha__text recaptcha__text--subtext">Privacy - Terms</span>
+      <div class="container wrapper">
+        <div class="row d-flex flex-lg-row flex-column-reverse py-5">
+          <div class="col-lg-7 col-12 contacts__inner">
+            <form action="#" id="formCallback" class="contacts__form form d-flex flex-column p-lg-5 p-4">
+              <p class="form__text text">
+                Отправьте свои данные и специалист нашей компании свяжется с вами в ближайшее время.
+              </p>
+              <input type="text" name="name" id="form--name" class="input mb-3" placeholder="Ваше имя">
+              <input type="email" name="email" id="form--email" class="input mb-3" placeholder="E-mail">
+              <input type="tel" name="phone" id="form--phone" class="input mb-3" placeholder="Телефон">
+              <div
+                class="form--recaptcha d-flex flex-lg-row justify-content-lg-between align-items-center justify-content-center pt-lg-0 pt-3 flex-column">
+                <input type="checkbox" class="form__agree--checkbox" name="agree" id="form__agree" class="mx-2">
+                <label for="form__agree" class="form__agree">
+                  Я не робот
+                </label>
+                <div class="recaptcha__block d-flex flex-column">
+                  <img src="./img/icon/reCAPTCHA.svg" alt="recaptha" class="recaptcha__img">
+                  <span class="recaptcha__text pl-1">reCAPTCHA</span>
+                  <span class="recaptcha__text recaptcha__text--subtext">Privacy - Terms</span>
+                </div>
               </div>
-            </div>
-            <input type="submit" value="Отправить" class="form--submit w-25 mt-4">
-          </form>
+              <input type="submit" value="Отправить" class="form--submit py-2 px-4 mt-4">
+            </form>
+          </div>
+          <div
+            class="col-lg-5 col-12 contacts__inner--text d-flex flex-column align-items-lg-end align-items-start pl-4">
+            <h2 class="contacts__title title__page title pr-4">Обратная связь</h2>
+            <p class="contacts__text text w-75 align-self-lg-end align-self-start">
+              В целом, конечно, высокое качество позиционных исследований обеспечивает широкому кругу (специалистов)
+              участие в
+              формировании первоочередных требований. Вот вам яркий пример современных тенденций -.
+            </p>
+          </div>
         </div>
-        <div class="col-md-5 contacts__inner--text d-flex flex-column align-items-end">
-          <h2 class="contacts__title title pr-4">Обратная связь</h2>
-          <p class="contacts__text text w-75 align-self-end ">
-            В целом, конечно, высокое качество позиционных исследований обеспечивает широкому кругу (специалистов)
-            участие в
-            формировании первоочередных требований. Вот вам яркий пример современных тенденций -.
-          </p>
-        </div>
+
       </div>
     </section>
   </div>

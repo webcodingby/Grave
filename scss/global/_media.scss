@@ -4,11 +4,7 @@
   }
 }
 
-@media (min-width: 768px) {}
-
-@media (min-width: 540px) {}
-
-@media (min-width: 320px) and (max-width: 539px) {
+@media (min-width: 320px) and (max-width: 990px) {
   body {
     font-size: 12px;
     font-weight: $weight;
@@ -39,7 +35,7 @@
   }
 
   .title__header--page {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 122%;
     font-weight: $weightBold;
   }
@@ -88,6 +84,18 @@
   }
 
   .description__text--img {
+    width: 100%;
+  }
+
+  .form__agree {
+    margin-left: 0;
+  }
+
+  .form--submit {
+    width: 50%;
+  }
+
+  .description__text {
     width: 100%;
   }
 }
