@@ -158,7 +158,8 @@ header {
 }
 
 .gallery--img:hover img,
-.gallery--img:focus img {
+.gallery--img:focus img,
+.gallery--img:active img {
   -webkit-filter: sepia(2) saturate(3) contrast(1);
           filter: sepia(2) saturate(3) contrast(1);
 }

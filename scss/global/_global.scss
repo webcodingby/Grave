@@ -155,6 +155,7 @@ header {
 }
 
 .gallery--img:hover img,
-.gallery--img:focus img {
+.gallery--img:focus img,
+.gallery--img:active img {
   filter: sepia(2) saturate(3) contrast(1);
 }
