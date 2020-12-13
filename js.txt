@@ -1,0 +1,2 @@
+const resizelistener = document.querySelector('.resizelistener');
+resizelistener.remove();
